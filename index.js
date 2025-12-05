@@ -10,6 +10,14 @@ module.exports = (app) => {
     const issueComment = context.issue({
       body: "Thanks for the report!",
     });
-    await context.octokit.issues.createComment(issueComment);
+    try {
+      await context.octokit.issues.createComment(issueComment);
+    } catch (error) {
+      context.log.error(
+        error,
+        "Failed to create comment on issue #%d",
+        context.payload.issue.number
+      );
+    }
   });
 };

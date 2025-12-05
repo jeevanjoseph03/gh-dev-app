@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "probot run ./index.js",
-    "dev": "nodemon --exec 'npm start'"
+    "dev": "nodemon --exec probot run ./index.js"
   },
   "keywords": [
     "probot",

@@ -17,7 +17,7 @@ A simple GitHub App built with [Probot](https://probot.github.io/) that automati
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/jeevanjoseph03/gh-dev-app.git
+   git clone https://github.com/your-username/gh-dev-app.git
    cd gh-dev-app
    ```
 
@@ -76,7 +76,7 @@ Fill in the required fields:
 | Field | Value |
 |-------|-------|
 | **GitHub App name** | `gh-dev-app` (or any unique name) |
-| **Homepage URL** | `https://github.com/jeevanjoseph03/gh-dev-app` |
+| **Homepage URL** | `https://github.com/your-username/gh-dev-app` |
 | **Webhook URL** | Your Smee URL (e.g., `https://smee.io/YOUR_CHANNEL_ID`) |
 | **Webhook secret** | Create a secure secret (e.g., use `openssl rand -hex 20`) |
 
@@ -135,10 +135,9 @@ Start the app:
 npm start
 ```
 
-For development with auto-reload (requires nodemon):
+For development with auto-reload:
 
 ```bash
-npm install -g nodemon
 npm run dev
 ```
 

@@ -1,16 +1,20 @@
 {
   "name": "gh-dev-app",
   "version": "1.0.0",
-  "description": "A simple GitHub App built with Probot that comments on new issues",
+  "description": "A comprehensive GitHub App for repository maintenance and automation",
   "main": "index.js",
   "scripts": {
     "start": "probot run ./index.js",
-    "dev": "nodemon --exec probot run ./index.js"
+    "dev": "nodemon --exec probot run ./index.js",
+    "lint": "eslint ."
   },
   "keywords": [
     "probot",
     "github-app",
-    "github"
+    "github",
+    "automation",
+    "triage",
+    "developer-tools"
   ],
   "author": "",
   "license": "ISC",
@@ -18,6 +22,11 @@
     "probot": "^13.0.0"
   },
   "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
     "nodemon": "^3.0.1",
     "smee-client": "^2.0.0"
   },

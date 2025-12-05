@@ -1,11 +1,13 @@
 # gh-dev-app
 
-A simple GitHub App built with [Probot](https://probot.github.io/) that automatically comments on newly opened issues with "Thanks for the report!".
+A comprehensive GitHub App built with [Probot](https://probot.github.io/) designed to automate repository maintenance and improve developer experience.
 
 ## Features
 
-- Listens for `issues.opened` webhook events
-- Automatically posts a comment saying "Thanks for the report!" on new issues
+- **Auto-Response**: Automatically comments on newly opened issues to acknowledge receipt.
+- **Auto-Labeling**: Automatically labels issues based on keywords in the title or body (e.g., 'bug', 'enhancement', 'question', 'documentation').
+- **Welcome Message**: Welcomes first-time contributors when they open their first Issue or Pull Request.
+- **PR Size Check**: Warns on Pull Requests that are too large (> 500 lines changed) to encourage smaller, reviewable PRs.
 
 ## Prerequisites
 
@@ -25,6 +27,13 @@ A simple GitHub App built with [Probot](https://probot.github.io/) that automati
    ```bash
    npm install
    ```
+
+3. Configure Environment Variables:
+   - Copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Fill in the required credentials in `.env` (App ID, Private Key, Webhook Secret).
 
 ## Setting Up Local Webhook Proxying with smee-client
 

@@ -1,0 +1,26 @@
+{
+  "name": "gh-dev-app",
+  "version": "1.0.0",
+  "description": "A simple GitHub App built with Probot that comments on new issues",
+  "main": "index.js",
+  "scripts": {
+    "start": "probot run ./index.js",
+    "dev": "nodemon --exec 'npm start'"
+  },
+  "keywords": [
+    "probot",
+    "github-app",
+    "github"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "probot": "^13.0.0"
+  },
+  "devDependencies": {
+    "smee-client": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
